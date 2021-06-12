@@ -50,7 +50,7 @@ int is_cmd(char name[]){
 /*this function checks the labels and allocates the list for each new data added with the correct labels 
 if any errors detected the error flag will be raised and the function will print the error and abort*/
 void check_label(char line[],char label[],int lenLine, int *pos){
-	int i,j=0,ch=0;
+	int i, j=0, ch=0;
 	char token[MAX_STR_LEN];
 	if(label[0]!='\0'){/*checks if the label exist*/
 		if(!DC)
