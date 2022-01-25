@@ -1,5 +1,5 @@
-ex14 : check.o dataUpdate.o checkFunc.o parsing.o main.o
-	gcc -g -ansi -Wall -pedantic check.o dataUpdate.o checkFunc.o parsing.o main.o -o ex14
+run : check.o dataUpdate.o checkFunc.o parsing.o main.o
+	gcc -g -ansi -Wall -pedantic check.o dataUpdate.o checkFunc.o parsing.o main.o -o run
 
 main.o:	main.c global.h
 	gcc -c -ansi -Wall -pedantic main.c -o main.o
